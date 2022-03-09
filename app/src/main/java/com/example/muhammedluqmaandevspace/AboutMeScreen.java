@@ -2,7 +2,10 @@ package com.example.muhammedluqmaandevspace;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class AboutMeScreen extends AppCompatActivity {
 
@@ -10,5 +13,12 @@ public class AboutMeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me_screen);
+
+        Button aboutMeBackBtn = (Button) findViewById(R.id.aboutMeBackBtn);
+
+        aboutMeBackBtn.setOnClickListener((View v) -> {
+            Intent goToMenuActivity = new Intent(getApplicationContext(), MenuScreen.class);
+            startActivity(goToMenuActivity);
+        });
     }
 }

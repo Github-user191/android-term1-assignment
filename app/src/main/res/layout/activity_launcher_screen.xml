@@ -10,61 +10,70 @@
         android:id="@+id/launcherTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="40dp"
+
+        android:fontFamily="@font/poppins_bold"
         android:gravity="center"
-        android:letterSpacing="0.01"
+        android:letterSpacing="-0.03"
+
         android:rotationX="0"
-        android:text="TextView"
-        android:textSize="20sp"
+        android:text="Muhammed Luqmaan\nCode Space"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Muhammed Luqmaan\nCode Space" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/launcherVisitorNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/poppins_semibold"
+        android:textColor="@android:color/background_dark"
         android:letterSpacing="0.01"
-        android:text="TextView"
+        android:text="Visitor's name:"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/launcherTitleTextView"
-        tools:text="Visitor's name:" />
+     />
+
 
     <EditText
         android:id="@+id/launcherVisitorNameEditText"
-        android:layout_width="160dp"
-        android:layout_height="39dp"
+        android:layout_width="336dp"
+        android:layout_height="61dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/edit_text_border"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_user_icon"
+        android:drawableLeft="@drawable/custom_user_icon"
+        android:drawablePadding="13dp"
         android:ems="10"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/poppins"
         android:hint="Enter your name"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/launcherVisitorNameTextView" />
 
     <Button
         android:id="@+id/launcherNextBtn"
-        android:layout_width="294dp"
-        android:layout_height="53dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
         android:layout_marginTop="108dp"
-        android:backgroundTint="@color/primary_red_700"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Button"
+        android:textAllCaps="false"
+        android:letterSpacing="-.01"
+        android:backgroundTint="@color/primary_blue_700"
+        android:fontFamily="@font/poppins"
+        android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/launcherVisitorNameEditText"
-        tools:text="Next" />
+        app:layout_constraintTop_toBottomOf="@+id/launcherVisitorNameEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

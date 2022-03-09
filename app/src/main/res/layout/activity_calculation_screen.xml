@@ -12,40 +12,41 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Button"
+        android:text="Back"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Back" />
+    />
 
     <TextView
         android:id="@+id/calculationTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="TextView"
-        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="-0.03"
+        android:text="My Calculation"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="My Calculation" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/calculationTitleInfoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"
-        android:text="TextView"
+        android:gravity="center_horizontal"
+        android:text="You picked from the\noptions provided by lecturer"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calculationTitleTextView"
-        tools:text="You picked from the\noptions provided by lecturer" />
+        app:layout_constraintTop_toBottomOf="@+id/calculationTitleTextView" />
 
     <TextView
         android:id="@+id/textView3"
@@ -53,22 +54,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="336dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="TextView"
+        android:text="Request input from user"
+        android:letterSpacing="-0.03"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Request input from user" />
+    />
 
     <EditText
         android:id="@+id/calculationInputEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
         android:layout_marginTop="408dp"
-        android:background="@drawable/edit_text_border"
+        android:background="@drawable/custom_input"
         android:ems="10"
+        android:fontFamily="@font/poppins"
         android:hint="Enter number"
         android:inputType="number"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,11 +84,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="496dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="TextView"
+        android:text="Result"
+        android:letterSpacing="-0.03"
+        android:textColor="@android:color/background_dark"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Result" />
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

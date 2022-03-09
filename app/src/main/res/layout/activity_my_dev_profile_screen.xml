@@ -14,21 +14,93 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Button"
+        android:text="Back"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Back" />
+    />
 
     <TextView
         android:id="@+id/myDevProfileTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="TextView"
-        android:textSize="20sp"
+        android:letterSpacing="-0.03"
+        android:textColor="@android:color/background_dark"
+        android:fontFamily="@font/poppins_bold"
+        android:text="My Dev Details"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="114dp"
-        tools:text="My Details" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223"
+    />
+
+    <TextView
+        android:id="@+id/myDevProfileStudentNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="13dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        android:text="Muhammed Luqmaan"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDevProfileTitleTextView"
+         />
+
+    <TextView
+        android:id="@+id/myDevProfileContactNumberTextViewew4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="13dp"
+        android:fontFamily="@font/poppins"
+        android:text="083 344 8921"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDevProfileStudentNameTextView"
+    />
+
+    <TextView
+        android:id="@+id/myDevProfileEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="13dp"
+        android:text="220464901@mycput.ac.za"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDevProfileContactNumberTextViewew4"
+    />
+
+    <TextView
+        android:id="@+id/myDevProfileLinkedInTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins"
+        android:autoLink="web"
+        android:text="My LinkedIn"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDevProfileEmailTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

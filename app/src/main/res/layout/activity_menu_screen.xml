@@ -12,26 +12,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="TextView"
+        android:text=""
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Dear Johnathon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/menuWelcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:letterSpacing="-0.03"
+        android:textColor="@android:color/background_dark"
         android:fontFamily="@font/poppins_semibold"
-        android:text="TextView"
-        android:textSize="20sp"
+        android:text="Welcome to my code space"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuTitleTextView"
-        tools:text="Welcome to my code space" />
+        app:layout_constraintTop_toBottomOf="@+id/menuTitleTextView" />
 
     <Button
         android:id="@+id/menuHomeBtn"
@@ -42,13 +42,13 @@
         android:layout_marginTop="204dp"
         android:fontFamily="@font/poppins_semibold"
         android:letterSpacing="0"
-        android:text="Button"
+        android:text="Home"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="#FFFFFF"
-        tools:text="Home" />
+    />
 
     <Button
         android:id="@+id/menuCalculationBtn"
@@ -59,12 +59,12 @@
         android:layout_marginRight="44dp"
         android:fontFamily="@font/poppins_semibold"
         android:letterSpacing="0"
-        android:text="Button"
+        android:text="Calculation"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Calculation" />
+    />
 
     <Button
         android:id="@+id/menuAboutMeBtn"
@@ -74,14 +74,14 @@
         android:fontFamily="@font/poppins_semibold"
         android:letterSpacing="0"
         android:padding="14dp"
-        android:text="Button"
+        android:text="About me"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="About me" />
+    />
 
     <Button
         android:id="@+id/menuMyDevProfileBtn"
@@ -91,12 +91,12 @@
         android:fontFamily="@font/poppins_semibold"
         android:letterSpacing="0"
         android:padding="14dp"
-        android:text="Button"
+        android:text="My Dev profile"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="My Dev profile" />
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
