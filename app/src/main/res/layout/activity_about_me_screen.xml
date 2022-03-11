@@ -11,27 +11,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/poppins_semibold"
         android:text="Back"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins"
         android:textAllCaps="false"
+        android:letterSpacing="0"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="34dp"
-    />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/aboutMeTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:letterSpacing="-0.03"
-        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="96dp"
         android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="-0.03"
         android:text="About Me"
+        android:textColor="@android:color/background_dark"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-    />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/aboutMeImageView"
@@ -39,6 +46,7 @@
         android:layout_height="75dp"
         tools:layout_editor_absoluteX="288dp"
         tools:layout_editor_absoluteY="200dp"
+
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -48,6 +56,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
         android:layout_marginTop="200dp"
+        android:background="@drawable/custom_container_border"
         android:fontFamily="@font/roboto"
         android:text="Add the title My profile or About Me to show what the screen is all about. Be sure to add your selfie. Preferably passport size. Or showing clearly the face."
         android:textSize="13sp"

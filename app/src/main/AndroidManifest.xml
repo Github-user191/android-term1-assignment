@@ -16,8 +16,8 @@
         <activity android:name=".AboutMeScreen" />
         <activity android:name=".CalculationScreen" />
         <activity android:name=".MenuScreen" />
-        <activity android:name=".LauncherScreen">
 
+        <activity android:name=".LauncherScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

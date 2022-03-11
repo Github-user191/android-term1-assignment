@@ -4,93 +4,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculationScreen">
+    tools:context=".CalculationScreen"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/calculationTitleInfoTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:text="You picked from the\noptions provided by lecturer"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="13sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.484"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/calculationTitleTextView" />-->
+
 
     <Button
         android:id="@+id/calculationBackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins"
+        android:letterSpacing="0"
         android:text="Back"
         android:textAllCaps="false"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-    />
+        app:layout_constraintVertical_bias="0.045" />
 
     <TextView
         android:id="@+id/calculationTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:textColor="@android:color/background_dark"
         android:fontFamily="@font/poppins_bold"
         android:letterSpacing="-0.03"
-        android:text="My Calculation"
+        android:text="Area of a Trapezoid"
+        android:textColor="@android:color/background_dark"
         android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculationErrorTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/calculationTitleInfoTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins"
-        android:gravity="center_horizontal"
-        android:text="You picked from the\noptions provided by lecturer"
-        android:textAlignment="center"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calculationTitleTextView" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="336dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Request input from user"
-        android:letterSpacing="-0.03"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-    />
+        app:layout_constraintVertical_bias="0.817" />
 
     <EditText
-        android:id="@+id/calculationInputEditText"
-        android:layout_width="230dp"
+        android:id="@+id/calculationBase1EditText"
+        android:layout_width="280dp"
         android:layout_height="50dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/poppins"
-        android:hint="Enter number"
+        android:hint="Enter value of base 1"
+
         android:inputType="number"
         android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculationBase2EditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculationResultBtn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins"
+        android:letterSpacing="0"
+
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/calculationClearBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculationClearBtn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+
+        android:layout_marginBottom="32dp"
+        android:background="@color/black"
+        android:fontFamily="@font/poppins"
+        android:letterSpacing="0"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculationResultTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/calculationHeightEditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter value of height"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculationResultBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/calculationBase2EditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter value of base 2"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculationHeightEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/calculationResultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="496dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Result"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/poppins_bold"
         android:letterSpacing="-0.03"
+        android:text=""
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-    />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    22<TextView
+        android:id="@+id/calculationErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculationBase1EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

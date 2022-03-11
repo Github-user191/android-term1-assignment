@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".LauncherScreen">
 
+
     <TextView
         android:id="@+id/launcherTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
 
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
@@ -22,7 +23,7 @@
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,24 +31,22 @@
         android:id="@+id/launcherVisitorNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="92dp"
         android:fontFamily="@font/poppins_semibold"
-        android:textColor="@android:color/background_dark"
         android:letterSpacing="0.01"
         android:text="Visitor's name:"
+        android:textColor="@android:color/background_dark"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/launcherTitleTextView"
-     />
-
+        app:layout_constraintTop_toBottomOf="@+id/launcherTitleTextView" />
 
     <EditText
         android:id="@+id/launcherVisitorNameEditText"
-        android:layout_width="336dp"
+        android:layout_width="280dp"
         android:layout_height="61dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_user_icon"
         android:drawableLeft="@drawable/custom_user_icon"
@@ -58,7 +57,7 @@
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/launcherVisitorNameTextView" />
 
@@ -67,13 +66,32 @@
         android:layout_width="280dp"
         android:layout_height="60dp"
         android:layout_marginTop="108dp"
-        android:textAllCaps="false"
-        android:letterSpacing="-.01"
-        android:backgroundTint="@color/primary_blue_700"
+        android:background="@drawable/custom_button"
         android:fontFamily="@font/poppins"
+        android:letterSpacing="0"
         android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/launcherVisitorNameEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/launcherVisitorNameEditText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/launcherVisitorNameErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Please enter a value"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/launcherVisitorNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/launcherVisitorNameTextView"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

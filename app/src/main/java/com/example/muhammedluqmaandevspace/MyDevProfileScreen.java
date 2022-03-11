@@ -20,7 +20,7 @@ public class MyDevProfileScreen extends AppCompatActivity {
         Button myDevProfileBackBtn = (Button) findViewById(R.id.myDevProfileBackBtn);
 
         myDevProfileBackBtn.setOnClickListener((View v) -> {
-            Intent goToMenuActivity = new Intent(getApplicationContext(), MenuScreen.class);
+            Intent goToMenuActivity = new Intent(MyDevProfileScreen.this, MenuScreen.class);
             startActivity(goToMenuActivity);
         });
 

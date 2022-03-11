@@ -14,43 +14,45 @@ public class MenuScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
-        TextView menuWelcomeTextView = (TextView) findViewById(R.id.menuWelcomeTextView);
 
+
+        TextView menuWelcomeTextView = (TextView) findViewById(R.id.menuWelcomeTextView);
+        Button menuHomeBtn = (Button) findViewById(R.id.menuHomeBtn);
+        Button menuCalculationBtn = (Button) findViewById(R.id.menuCalculationBtn);
+        Button menuAboutMeBtn = (Button) findViewById(R.id.menuAboutMeBtn);
+        Button menuMyDevProfileBtn = (Button) findViewById(R.id.menuMyDevProfileBtn);
+
+
+        // Get name from intent and display in menu activity
         if(getIntent().hasExtra("visitorName")) {
             TextView menuTitleTextView = (TextView) findViewById(R.id.menuTitleTextView);
-            String visitorName = getIntent().getExtras().getString("visitorName");
+            String visitorName = getIntent().getStringExtra("visitorName");
             menuTitleTextView.setText("Dear " + visitorName);
         }
 
 
-        Button menuHomeBtn = (Button) findViewById(R.id.menuHomeBtn);
         menuHomeBtn.setOnClickListener((View v) -> {
-            Intent goToLauncherActivity = new Intent(getApplicationContext(), LauncherScreen.class);
+            Intent goToLauncherActivity = new Intent(MenuScreen.this, LauncherScreen.class);
             startActivity(goToLauncherActivity);
         });
 
-        Button menuCalculationBtn = (Button) findViewById(R.id.menuCalculationBtn);
+
         menuCalculationBtn.setOnClickListener((View v) -> {
-            Intent goToCalculatorActivity = new Intent(getApplicationContext(), CalculationScreen.class);
+            Intent goToCalculatorActivity = new Intent(MenuScreen.this, CalculationScreen.class);
             startActivity(goToCalculatorActivity);
         });
 
-        Button menuAboutMeBtn = (Button) findViewById(R.id.menuAboutMeBtn);
+
         menuAboutMeBtn.setOnClickListener((View v) -> {
-            Intent goToAboutMeActivity = new Intent(getApplicationContext(), AboutMeScreen.class);
+            Intent goToAboutMeActivity = new Intent(MenuScreen.this, AboutMeScreen.class);
             startActivity(goToAboutMeActivity);
         });
 
-        Button menuMyDevProfileBtn = (Button) findViewById(R.id.menuMyDevProfileBtn);
+
         menuMyDevProfileBtn.setOnClickListener((View v) -> {
-            Intent goToMyDevProfileActivity = new Intent(getApplicationContext(), MyDevProfileScreen.class);
+            Intent goToMyDevProfileActivity = new Intent(MenuScreen.this, MyDevProfileScreen.class);
             startActivity(goToMyDevProfileActivity);
         });
-
-
-
-
-
 
     }
 }
