@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.Spannable;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
@@ -18,17 +19,21 @@ public class MyDevProfileScreen extends AppCompatActivity {
         setContentView(R.layout.activity_my_dev_profile_screen);
 
         Button myDevProfileBackBtn = (Button) findViewById(R.id.myDevProfileBackBtn);
+        TextView myDevProfileLinkedInTextView = (TextView) findViewById(R.id.myDevProfileLinkedInTextView);
+
 
         myDevProfileBackBtn.setOnClickListener((View v) -> {
             Intent goToMenuActivity = new Intent(MyDevProfileScreen.this, MenuScreen.class);
             startActivity(goToMenuActivity);
         });
 
-        TextView myDevProfileLinkedInTextView = (TextView) findViewById(R.id.myDevProfileLinkedInTextView);
 
-        myDevProfileLinkedInTextView.setClickable(true);
+
+//        myDevProfileLinkedInTextView.setClickable(true);
         myDevProfileLinkedInTextView.setMovementMethod(LinkMovementMethod.getInstance());
-        String text = "<a href='http://www.google.com'> Google </a>";
+        String text = "<font color=#000><a href='http://www.google.com'> LinkedIn </a></font>";
+        Spannable spannedText = (Spannable) Html.fromHtml(text);
+
         myDevProfileLinkedInTextView.setText(Html.fromHtml(text));
     }
 }

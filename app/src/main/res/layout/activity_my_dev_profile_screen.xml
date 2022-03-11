@@ -8,15 +8,15 @@
 
     <Button
         android:id="@+id/myDevProfileBackBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/poppins"
-        android:textAllCaps="false"
         android:letterSpacing="0"
+        android:text="Back"
+        android:textAllCaps="false"
         android:textSize="14sp"
         app:backgroundTint="@null"
-        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
@@ -35,10 +35,10 @@
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.189" />
 
     <TextView
         android:id="@+id/myDevProfileStudentNameTextView"
@@ -53,6 +53,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myDevProfileTitleTextView" />
 
@@ -69,6 +70,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myDevProfileStudentNameTextView" />
 
@@ -85,7 +87,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myDevProfileContactNumberTextViewew4" />
 
@@ -94,13 +96,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:drawableStart="@drawable/ic_linkedin"
+        android:drawableLeft="@drawable/ic_linkedin"
+        android:drawablePadding="13dp"
         android:fontFamily="@font/poppins"
-        android:autoLink="web"
         android:text="My LinkedIn"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myDevProfileEmailTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
