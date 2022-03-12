@@ -27,8 +27,10 @@ public class CalculationScreen extends AppCompatActivity {
         EditText calculationBase2EditText = (EditText) findViewById(R.id.calculationBase2EditText);
         EditText calculationHeightEditText = (EditText) findViewById(R.id.calculationHeightEditText);
 
-        // Area = 0.5 * (base1 + base2) * height;
+
         TextView calculationResultTextView = (TextView) findViewById(R.id.calculationResultTextView);
+
+        calculationErrorTextView.setText("");
 
         calculationBackBtn.setOnClickListener((View v) -> {
             Intent goToMenuActivity = new Intent(CalculationScreen.this, MenuScreen.class);
@@ -47,6 +49,7 @@ public class CalculationScreen extends AppCompatActivity {
             Double base2 = Double.parseDouble(calculationBase2EditText.getText().toString());
             Double height = Double.parseDouble(calculationHeightEditText.getText().toString());
 
+            // Area = 0.5 * (base1 + base2) * height;
             Double areaOfTrapezoid = 0.5 * (base1 + base2) * height;
 
             calculationResultTextView.setText(String.valueOf(areaOfTrapezoid));

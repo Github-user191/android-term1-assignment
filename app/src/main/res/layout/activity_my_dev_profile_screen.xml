@@ -10,7 +10,7 @@
         android:id="@+id/myDevProfileBackBtn"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_secondary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="Back"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/myDevProfileTitleTextView" />
 
     <TextView
-        android:id="@+id/myDevProfileContactNumberTextViewew4"
+        android:id="@+id/myDevProfileContactNumberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -66,7 +66,7 @@
         android:drawableLeft="@drawable/ic_phone"
         android:drawablePadding="13dp"
         android:fontFamily="@font/poppins"
-        android:text="083 344 8921"
+        android:text="067 813 0371"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myDevProfileContactNumberTextViewew4" />
+        app:layout_constraintTop_toBottomOf="@+id/myDevProfileContactNumberTextView" />
 
     <TextView
         android:id="@+id/myDevProfileLinkedInTextView"

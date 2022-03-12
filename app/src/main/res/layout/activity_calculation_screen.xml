@@ -7,27 +7,11 @@
     tools:context=".CalculationScreen"
     tools:layout_editor_absoluteY="81dp">
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/calculationTitleInfoTextView"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="12dp"-->
-    <!--        android:fontFamily="@font/poppins"-->
-    <!--        android:gravity="center_horizontal"-->
-    <!--        android:text="You picked from the\noptions provided by lecturer"-->
-    <!--        android:textAlignment="center"-->
-    <!--        android:textSize="13sp"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.484"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/calculationTitleTextView" />-->
-
-
     <Button
         android:id="@+id/calculationBackBtn"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_secondary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="Back"
@@ -50,23 +34,23 @@
         android:text="Area of a Trapezoid"
         android:textColor="@android:color/background_dark"
         android:textSize="26sp"
-        app:layout_constraintBottom_toTopOf="@+id/calculationErrorTextView"
+        app:layout_constraintBottom_toTopOf="@+id/calculationBase1EditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.751" />
 
     <EditText
         android:id="@+id/calculationBase1EditText"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/poppins"
-        android:hint="Enter value of base 1"
 
+        android:hint="Enter value of base 1"
         android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/calculationBase2EditText"
@@ -79,7 +63,7 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="Calculate"
@@ -88,16 +72,17 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/calculationClearBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
 
     <Button
         android:id="@+id/calculationClearBtn"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/light_gray"
-        android:backgroundTint="@color/white"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/background_dark"
+        android:backgroundTint="@null"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="Clear"
@@ -105,14 +90,14 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/calculationResultTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/calculationHeightEditText"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/poppins"
@@ -128,7 +113,7 @@
         android:id="@+id/calculationBase2EditText"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/poppins"
@@ -144,7 +129,7 @@
         android:id="@+id/calculationResultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="36dp"
         android:fontFamily="@font/poppins_bold"
         android:letterSpacing="-0.03"
         android:text=""
@@ -155,21 +140,20 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    22
-
     <TextView
         android:id="@+id/calculationErrorTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:fontFamily="@font/poppins"
-        android:text=""
+        android:text="Please fill out all the fields"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/calculationBase1EditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.249"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculationTitleTextView"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     tools:context=".MenuScreen">
 
     <TextView
-        android:id="@+id/menuTitleTextView"
+        android:id="@+id/menuNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuTitleTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/menuNameTextView" />
 
     <Button
         android:id="@+id/menuHomeBtn"
@@ -43,7 +43,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="204dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="Home"
@@ -61,7 +61,7 @@
         android:layout_marginTop="204dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="Calculation"
@@ -76,7 +76,7 @@
         android:layout_width="160dp"
         android:layout_height="55dp"
         android:layout_marginTop="324dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="About me"
@@ -93,7 +93,7 @@
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginTop="480dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
         android:text="My Dev profile"

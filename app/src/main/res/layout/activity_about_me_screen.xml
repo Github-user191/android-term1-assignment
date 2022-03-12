@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutMeScreen">
 
+
     <Button
         android:id="@+id/aboutMeBackBtn"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="32dp"
-        android:text="Back"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button_secondary"
         android:fontFamily="@font/poppins"
-        android:textAllCaps="false"
         android:letterSpacing="0"
+        android:text="Back"
+        android:textAllCaps="false"
         android:textSize="14sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,11 +30,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
         android:id="@+id/aboutMeTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
         android:fontFamily="@font/poppins_bold"
         android:letterSpacing="-0.03"
         android:text="About Me"
@@ -40,29 +48,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/aboutMeImageView"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="200dp"
-
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="202dp"
-        android:layout_height="283dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="200dp"
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
         android:background="@drawable/custom_container_border"
-        android:fontFamily="@font/roboto"
-        android:text="Add the title My profile or About Me to show what the screen is all about. Be sure to add your selfie. Preferably passport size. Or showing clearly the face."
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aboutMeTextView1"
+                android:layout_width="139dp"
+                android:layout_height="155dp"
+                android:layout_marginEnd="141dp"
+                android:layout_marginRight="141dp"
+                android:layout_marginBottom="192dp"
+                android:fontFamily="@font/roboto"
+                android:text="I'm Muhammed Luqmaan, I like to code blah blah.\n\nI have skills such as Full-Stack Web Development and Design."
+                android:textColor="@android:color/background_dark"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/aboutMeTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/roboto"
+                android:text="My current tech stack is:\n\nSpring boot for the backend\nReactJS for the frontend\nMySQL for the database. \n\nI am also familiar with Adobe products such as Photoshop and Illustrator.\n\nIn my free time I am learning more about Microservices and Android Studio programming.\n\nI am planning to learn as much as I can to land an internship and be able to gain work experience. "
+                android:textColor="@android:color/background_dark"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                app:srcCompat="@drawable/ic_avatar" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

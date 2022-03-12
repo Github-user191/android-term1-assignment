@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class AboutMeScreen extends AppCompatActivity {
 
@@ -16,8 +17,11 @@ public class AboutMeScreen extends AppCompatActivity {
 
         Button aboutMeBackBtn = (Button) findViewById(R.id.aboutMeBackBtn);
 
+        String visitorName = getIntent().getStringExtra("visitorName");
+
+
         aboutMeBackBtn.setOnClickListener((View v) -> {
-            Intent goToMenuActivity = new Intent(AboutMeScreen.this, MenuScreen.class);
+            Intent goToMenuActivity = new Intent(getApplicationContext(), MenuScreen.class);
             startActivity(goToMenuActivity);
         });
     }

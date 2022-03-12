@@ -15,27 +15,22 @@ public class MenuScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
 
-
-        TextView menuWelcomeTextView = (TextView) findViewById(R.id.menuWelcomeTextView);
         Button menuHomeBtn = (Button) findViewById(R.id.menuHomeBtn);
         Button menuCalculationBtn = (Button) findViewById(R.id.menuCalculationBtn);
         Button menuAboutMeBtn = (Button) findViewById(R.id.menuAboutMeBtn);
         Button menuMyDevProfileBtn = (Button) findViewById(R.id.menuMyDevProfileBtn);
-
-
         // Get name from intent and display in menu activity
-        if(getIntent().hasExtra("visitorName")) {
-            TextView menuTitleTextView = (TextView) findViewById(R.id.menuTitleTextView);
-            String visitorName = getIntent().getStringExtra("visitorName");
-            menuTitleTextView.setText("Dear " + visitorName);
-        }
+        TextView menuNameTextView = (TextView) findViewById(R.id.menuNameTextView);
+
+        String visitorName = getIntent().getStringExtra("visitorName");
+        menuNameTextView.setText("Dear " + visitorName);
+
 
 
         menuHomeBtn.setOnClickListener((View v) -> {
             Intent goToLauncherActivity = new Intent(MenuScreen.this, LauncherScreen.class);
             startActivity(goToLauncherActivity);
         });
-
 
         menuCalculationBtn.setOnClickListener((View v) -> {
             Intent goToCalculatorActivity = new Intent(MenuScreen.this, CalculationScreen.class);
