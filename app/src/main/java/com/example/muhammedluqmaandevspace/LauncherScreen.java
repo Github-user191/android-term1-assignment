@@ -18,24 +18,26 @@ public class LauncherScreen extends AppCompatActivity {
 
         Button launcherNextBtn = (Button) findViewById(R.id.launcherNextBtn);
         EditText launcherVisitorNameEditText = (EditText) findViewById(R.id.launcherVisitorNameEditText);
-        TextView launcherVisitorNameErrorTextView = (TextView)  findViewById(R.id.launcherVisitorNameErrorTextView);
+        TextView launcherVisitorNameErrorTextView = (TextView) findViewById(R.id.launcherVisitorNameErrorTextView);
+
         launcherVisitorNameErrorTextView.setText("");
 
         // Using lambda function instead of anonymous inner class since it's a functional interface
         launcherNextBtn.setOnClickListener((View v) -> {
-        String visitorName = launcherVisitorNameEditText.getText().toString();
-        if(visitorName.equals("")) {
-            launcherVisitorNameErrorTextView.setText("Please enter a value");
 
-        } else {
-            launcherVisitorNameErrorTextView.setText("");
-            Intent goToMenuActivity = new Intent(getApplicationContext(), MenuScreen.class);
-            goToMenuActivity.putExtra("visitorName", visitorName);
-            startActivity(goToMenuActivity);
-        }
+            String visitorName = launcherVisitorNameEditText.getText().toString();
+
+            if (visitorName.equals("")) {
+                launcherVisitorNameErrorTextView.setText("Please enter a value");
+            } else {
+                launcherVisitorNameErrorTextView.setText("");
+                Intent goToMenuActivity = new Intent(LauncherScreen.this, MenuScreen.class);
+                goToMenuActivity.putExtra("visitorName", visitorName);
+                startActivity(goToMenuActivity);
+            }
 
 
-    });
+        });
 
 
     }

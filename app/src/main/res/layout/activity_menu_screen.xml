@@ -38,10 +38,10 @@
 
     <Button
         android:id="@+id/menuHomeBtn"
-        android:layout_width="160dp"
+        android:layout_width="140dp"
         android:layout_height="55dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:layout_marginTop="204dp"
         android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
@@ -56,11 +56,11 @@
 
     <Button
         android:id="@+id/menuCalculationBtn"
-        android:layout_width="160dp"
+        android:layout_width="140dp"
         android:layout_height="55dp"
         android:layout_marginTop="204dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
         android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
@@ -90,9 +90,8 @@
 
     <Button
         android:id="@+id/menuMyDevProfileBtn"
-        android:layout_width="300dp"
+        android:layout_width="325dp"
         android:layout_height="55dp"
-        android:layout_marginTop="480dp"
         android:background="@drawable/custom_button_primary"
         android:fontFamily="@font/poppins"
         android:letterSpacing="0"
@@ -100,8 +99,10 @@
         android:textAllCaps="false"
         android:textSize="14sp"
         app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
 </androidx.constraintlayout.widget.ConstraintLayout>

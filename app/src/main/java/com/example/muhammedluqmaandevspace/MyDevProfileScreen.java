@@ -33,7 +33,7 @@ public class MyDevProfileScreen extends AppCompatActivity {
 
         myDevProfileLinkedInTextView.setOnClickListener((View v) -> {
             Intent goToWebPage = new Intent(Intent.ACTION_VIEW);
-            goToWebPage.setData(Uri.parse("https://www.linkedin.com/in/muhammad-luqmaan-h-297505210/"));
+            goToWebPage.setData(Uri.parse("https://www.linkedin.com/"));
             startActivity(goToWebPage);
         });
 

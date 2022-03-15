@@ -78,7 +78,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="150dp"
                 android:fontFamily="@font/roboto"
-                android:text="My current tech stack is:\n\nSpring boot for the backend\nReactJS for the frontend\nMySQL for the database. \n\nI am also familiar with Adobe products such as Photoshop and Illustrator.\n\nIn my free time I am learning more about Microservices and Android Studio programming.\n\nI am planning to learn as much as I can to land an internship and be able to gain work experience. "
+                android:text="My current tech stack is:\n\nSpring boot for the backend\nReactJS for the frontend\nMySQL for the database \n\nI am also familiar with Adobe products such as Photoshop and Illustrator.\n\nIn my free time I am learning more about Microservices and Android programming.\n\nI am planning to learn as much as I can to land an internship and be able to gain work experience. "
                 android:textColor="@android:color/background_dark"
                 android:textSize="13sp" />
 

@@ -9,7 +9,7 @@
             <padding android:right="10dp"/>
             <padding android:left="10dp"/>
 
-            <stroke android:color="@color/primary_blue" android:width="2dp"/>
+            <stroke android:color="@color/primary_green" android:width="2dp"/>
         </shape>
     </item>
 
