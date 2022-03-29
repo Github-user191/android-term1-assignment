@@ -27,8 +27,7 @@ public class MyDevProfileScreen extends AppCompatActivity {
         TextView myDevProfileEmailTextView = (TextView) findViewById(R.id.myDevProfileEmailTextView);
 
         myDevProfileBackBtn.setOnClickListener((View v) -> {
-            Intent goToMenuActivity = new Intent(MyDevProfileScreen.this, MenuScreen.class);
-            startActivity(goToMenuActivity);
+            onBackPressed();
         });
 
         myDevProfileLinkedInTextView.setOnClickListener((View v) -> {

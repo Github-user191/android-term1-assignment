@@ -12,25 +12,14 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LauncherScreen"
-            android:label="launcher"/>
+        <activity android:name=".LauncherScreen" />
         <activity android:name=".MenuScreen" />
         <activity android:name=".CalculationScreen" />
         <activity android:name=".MyDevProfileScreen" />
         <activity android:name=".AboutMeScreen" />
-
-
-
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
 
         <meta-data
             android:name="preloaded_fonts"

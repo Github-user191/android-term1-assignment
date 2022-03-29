@@ -21,8 +21,7 @@ public class AboutMeScreen extends AppCompatActivity {
 
 
         aboutMeBackBtn.setOnClickListener((View v) -> {
-            Intent goToMenuActivity = new Intent(getApplicationContext(), MenuScreen.class);
-            startActivity(goToMenuActivity);
+            onBackPressed();
         });
     }
 }

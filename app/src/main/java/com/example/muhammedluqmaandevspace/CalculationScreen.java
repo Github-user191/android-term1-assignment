@@ -33,8 +33,7 @@ public class CalculationScreen extends AppCompatActivity {
         calculationErrorTextView.setText("");
 
         calculationBackBtn.setOnClickListener((View v) -> {
-            Intent goToMenuActivity = new Intent(CalculationScreen.this, MenuScreen.class);
-            startActivity(goToMenuActivity);
+            onBackPressed();
         });
 
         calculationResultBtn.setOnClickListener((View v) -> {

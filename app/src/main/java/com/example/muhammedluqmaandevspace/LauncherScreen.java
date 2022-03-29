@@ -35,8 +35,6 @@ public class LauncherScreen extends AppCompatActivity {
                 goToMenuActivity.putExtra("visitorName", visitorName);
                 startActivity(goToMenuActivity);
             }
-
-
         });
 
 

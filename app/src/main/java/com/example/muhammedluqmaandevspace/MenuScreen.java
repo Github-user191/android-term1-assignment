@@ -19,14 +19,14 @@ public class MenuScreen extends AppCompatActivity {
         Button menuCalculationBtn = (Button) findViewById(R.id.menuCalculationBtn);
         Button menuAboutMeBtn = (Button) findViewById(R.id.menuAboutMeBtn);
         Button menuMyDevProfileBtn = (Button) findViewById(R.id.menuMyDevProfileBtn);
-        TextView menuNameTextView = (TextView) findViewById(R.id.menuNameTextView);
+        TextView nameTextView  = (TextView) findViewById(R.id.nameTextView);
 
-        String visitorName = getIntent().getStringExtra("visitorName");
-        menuNameTextView.setText("Dear " + visitorName);
+        String name = getIntent().getStringExtra("name");
+        nameTextView.setText("Dear " + visitorName);
+
 
         menuHomeBtn.setOnClickListener((View v) -> {
             Intent goToLauncherActivity = new Intent(MenuScreen.this, LauncherScreen.class);
-            goToLauncherActivity.putExtra("visitorName", visitorName);
             startActivity(goToLauncherActivity);
         });
 
